@@ -35,7 +35,7 @@
       <h2 class="sobre-titulo">Sobre mim</h2>
       <div class="sobre-caixa">
         <p class="sobre-paragrafo">
-          Sou desenvolvedor Front-End apaixonado por criar interfaces modernas, responsivas e interativas usando HTML, CSS e JavaScript. Gosto de unir design e funcionalidade, buscando sempre aprender coisas novas e evoluir constantemente como desenvolvedor.
+          Sou desenvolvedor Front-End apaixonado por criar interfaces modernas, interativas usando HTML, CSS e JavaScript e se aventurando no Reactjs e Tailwind. Gosto de unir design e funcionalidade, buscando sempre aprender coisas novas e evoluir constantemente como desenvolvedor.
         </p>
       </div>
     </section>
@@ -45,26 +45,50 @@
       <div class="projetos-caixa">
 
         <div class="projetos-card">
-          <img src="./img/eu.jpg" alt="Ainda sem projeto" class="projetos-imagem" />
+          <img src="./img/academia.png" alt="acadenia da mazze" class="projetos-imagem" />
           <div class="caixa-textos-projetos">
-          <h3 class="info-projetos">Aqui será o titulo do projeto</h3>
-          <p class="paragrafo-projetos">Ainda não coloquei nada</p>
+          <h3 class="info-projetos">Academia da Mazze</h3>
+          <p class="paragrafo-projetos">Landing Page para academia da cidade</p>
           </div>
         </div>
 
         <div class="projetos-card">
-          <img src="./img/eu.jpg" alt="Ainda sem projeto" class="projetos-imagem" />
+          <img src="./img/barber-shop.png" alt="Barbearia" class="projetos-imagem" />
           <div class="caixa-textos-projetos">
-          <h3 class="info-projetos">Aqui será o titulo do projeto</h3>
-          <p class="paragrafo-projetos">Ainda não coloquei nada</p>
+          <h3 class="info-projetos">Barber Shop</h3>
+          <p class="paragrafo-projetos">Site de uma barbearia da cidade</p>
           </div>
         </div>
 
         <div class="projetos-card">
-          <img src="./img/eu.jpg" alt="Ainda sem projeto" class="projetos-imagem" />
+          <img src="./img/acquamarine.png" alt="Acquamarine" class="projetos-imagem" />
           <div class="caixa-textos-projetos">
-          <h3 class="info-projetos">Aqui será o titulo do projeto</h3>
-          <p class="paragrafo-projetos">Ainda não coloquei nada</p>
+          <h3 class="info-projetos">Acquamarine</h3>
+          <p class="paragrafo-projetos">SIte cronometrado para a inauguração da área residencial.</p>
+          </div>
+        </div>
+
+        <div class="projetos-card">
+          <img src="./img/petlife.png" alt="PetLife" class="projetos-imagem" />
+          <div class="caixa-textos-projetos">
+          <h3 class="info-projetos">PetLife</h3>
+          <p class="paragrafo-projetos">Um dos primeiros sites que fiz e o que mais me orgulho!</p>
+          </div>
+        </div>
+
+        <div class="projetos-card">
+          <img src="./img/calculadoraIMC.png" alt="Calculadora de IMC" class="projetos-imagem" />
+          <div class="caixa-textos-projetos">
+          <h3 class="info-projetos">Calculadora de IMC</h3>
+          <p class="paragrafo-projetos">Calculadora de IMC para práticar</p>
+          </div>
+        </div>
+
+        <div class="projetos-card">
+          <img src="./img/aguarde.jpg" alt="em breve" class="projetos-imagem" />
+          <div class="caixa-textos-projetos">
+          <h3 class="info-projetos">Em breve teremos novidades</h3>
+          <p class="paragrafo-projetos">Aguarde</p>
           </div>
         </div>
     </section>
@@ -72,13 +96,13 @@
     <section id="contato" class="contato">
       <h2 class="contato-titulo">Entre em contato</h2>
       
-      <form class="formulario-contato" id="formulario">
+      <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
         <div class="grupo-form">
-          <input placeholder="Nome" class="campo-form"/>
+          <input placeholder="Nome" class="campo-form" id="nome"/>
         </div>
 
         <div class="grupo-form">
-          <textarea placeholder="Digite sua Mensagem" class="campo-form"></textarea>
+          <textarea placeholder="Digite sua Mensagem" class="campo-form" id="mensagem" rows="6"></textarea>
         </div>
 
         <button type="submit" class="botao-form">Enviar WhatsApp</button>
